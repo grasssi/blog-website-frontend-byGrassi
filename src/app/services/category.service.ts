@@ -31,8 +31,5 @@ export class CategoryService {
 
   addcategory(body: any) {
     return this.httpa.post(`${environment.apiUrl}/category`,body)
-    .pipe(
-      catchError(err => this._errorService.handleError(err))
-    );
-  }
+     }
 }
